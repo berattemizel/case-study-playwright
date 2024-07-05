@@ -22,8 +22,10 @@ To run the tests locally, follow these steps:
    cd <repository_name>
 
 2. Install the dependencies:
+   ```sh
    npm install
 
 3. Run the tests:
+   ```sh
    npm test
 
