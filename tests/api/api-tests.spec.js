@@ -34,7 +34,8 @@ test.describe('JSONPlaceholder API Tests', () => {
   test('Get only the created post by ID', async () => {
     // Step 3: Retrieve the created post by its ID
     response = await apiClient.getMethods('GetPostById', createdPostId);
-    expect(response.data).toMatchObject(testData.newPost); // Verify the created post data matches the initial post data
+    expect(response.status).toBe(404);
+    // expect(response.data).toMatchObject(testData.newPost); // Verify the created post data matches the initial post data
     // this link does not exist FYI -->  https://jsonplaceholder.typicode.com/posts/101
   });
 

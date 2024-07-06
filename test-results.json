@@ -1,0 +1,345 @@
+{
+  "config": {
+    "configFile": "/Users/berat/projects/Playwright Projects/SymphonySolutions/playwright.config.js",
+    "rootDir": "/Users/berat/projects/Playwright Projects/SymphonySolutions",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/berat/projects/Playwright Projects/SymphonySolutions/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium-api",
+        "name": "chromium-api",
+        "testDir": "/Users/berat/projects/Playwright Projects/SymphonySolutions/tests/api",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 10000
+      },
+      {
+        "outputDir": "/Users/berat/projects/Playwright Projects/SymphonySolutions/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium-ui",
+        "name": "chromium-ui",
+        "testDir": "/Users/berat/projects/Playwright Projects/SymphonySolutions/tests/ui",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 10000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.45.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests/api/api-tests.spec.js",
+      "file": "tests/api/api-tests.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "JSONPlaceholder API Tests",
+          "file": "tests/api/api-tests.spec.js",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Read total number of posts and store in a variable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-api",
+                  "projectName": "chromium-api",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 10,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-07-06T02:43:17.757Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "36e0d07c36bacf28995c-d7fc2decf1cf696c4b4c",
+              "file": "tests/api/api-tests.spec.js",
+              "line": 22,
+              "column": 7
+            },
+            {
+              "title": "Create a new post and store its ID",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-api",
+                  "projectName": "chromium-api",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 588,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-07-06T02:43:18.020Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "36e0d07c36bacf28995c-7d4d595c1eb580c54045",
+              "file": "tests/api/api-tests.spec.js",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "Get only the created post by ID",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-api",
+                  "projectName": "chromium-api",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 43,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-07-06T02:43:18.613Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "36e0d07c36bacf28995c-cdc98d84db9c1fb07551",
+              "file": "tests/api/api-tests.spec.js",
+              "line": 34,
+              "column": 7
+            },
+            {
+              "title": "Replace some field in the created post with PATCH",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-api",
+                  "projectName": "chromium-api",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 287,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-07-06T02:43:18.659Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "36e0d07c36bacf28995c-34a064550adaef02cf88",
+              "file": "tests/api/api-tests.spec.js",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "Delete the created post by ID",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-api",
+                  "projectName": "chromium-api",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 214,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-07-06T02:43:18.950Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "36e0d07c36bacf28995c-16e5d98761b9c86f847a",
+              "file": "tests/api/api-tests.spec.js",
+              "line": 48,
+              "column": 7
+            },
+            {
+              "title": "Check the number of posts to ensure integrity",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-api",
+                  "projectName": "chromium-api",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 47,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-07-06T02:43:19.168Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "36e0d07c36bacf28995c-6548703d562d028362d1",
+              "file": "tests/api/api-tests.spec.js",
+              "line": 58,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests/ui/ui-tests.spec.js",
+      "file": "tests/ui/ui-tests.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "UI Tests",
+          "file": "tests/ui/ui-tests.spec.js",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should log in, verify items are sorted by name A->Z, change sorting to Z->A and verify",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-ui",
+                  "projectName": "chromium-ui",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 1602,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-07-06T02:43:17.756Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8c71f060210567570063-297bdf32d9f83b22c9e9",
+              "file": "tests/ui/ui-tests.spec.js",
+              "line": 15,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-07-06T02:43:17.239Z",
+    "duration": 2479.208,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
