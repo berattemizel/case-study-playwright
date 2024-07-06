@@ -1,4 +1,3 @@
-// pages/api.js
 import config from './apiConfig';
 import { ApiHelper } from './apiUtils';
 
@@ -7,6 +6,7 @@ export class Api {
     this.apiHelper = new ApiHelper(request);
   }
 
+  // these methods can be combined normally but there are some different cases can be occurred in the future such as adding headers, content types etc.
   async getMethods(pathName, parameterName) {
     switch (pathName) {
       case 'GetPosts':

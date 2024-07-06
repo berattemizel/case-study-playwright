@@ -1,4 +1,3 @@
-// data/testData.js
 const testData = {
   newPost: {
     title: 'foo',

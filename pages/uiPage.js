@@ -1,4 +1,3 @@
-// pages/uiPage.js
 import { expect, Page } from '@playwright/test';
 
 export class UiPage {
@@ -7,11 +6,12 @@ export class UiPage {
     // Define selectors for the UI elements
     this.inventoryItemName = '.inventory_item_name';  // Selector for inventory item names
     this.productSortContainer = '.product_sort_container';  // Selector for the product sort dropdown
+    this.baseURL = 'https://www.saucedemo.com/';
   }
 
-  async navigateTo(url) {
+  async navigateTo() {
     // Navigate to the given URL
-    await this.page.goto(url);
+    await this.page.goto(this.baseURL);
   }
 
   async login(username, password) {

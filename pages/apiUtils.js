@@ -1,4 +1,3 @@
-// pages/apiUtils.js
 import { APIRequestContext } from '@playwright/test';
 
 export class ApiHelper {
@@ -14,24 +13,8 @@ export class ApiHelper {
     this.responseTime = 0;
   }
 
-  setBaseUrl(baseUrl) {
-    this.baseUrl = baseUrl;
-  }
-
   setEndpoint(endpoint) {
     this.url = `${this.baseUrl}${endpoint}`;
-  }
-
-  addContentType(contentType) {
-    this.headers['Content-Type'] = contentType;
-  }
-
-  addAuthorization(token) {
-    this.headers['Authorization'] = `Bearer ${token}`;
-  }
-
-  addHeader(key, value) {
-    this.headers[key] = value;
   }
 
   addRequestBody(body) {
@@ -72,10 +55,6 @@ export class ApiHelper {
     } else {
       this.responseBody = await this.response.text();
     }
-    return { data: this.responseBody, response: this.response, status: this.status, time: this.responseTime };
-  }
-
-  async getAllResponseInfo() {
     return { data: this.responseBody, response: this.response, status: this.status, time: this.responseTime };
   }
 }
