@@ -84,6 +84,11 @@ To run the tests locally, follow these steps:
    ```sh
    npm test
 
-[CI/CD Pipeline Results](https://gitlab.com/case5553227/casestudy-playwright/-/pipelines/1362674484)
+[CI/CD Pipeline Results with GITLAB](https://gitlab.com/case5553227/casestudy-playwright/-/pipelines/1362674484)
+
 [Gitlab project](https://gitlab.com/case5553227/casestudy-playwright)
+
+[Action Workflow Results with GITHUB](https://github.com/berattemizel/case-study-playwright/actions/runs/9816320430)
+
+
 
