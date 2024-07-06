@@ -6,7 +6,7 @@ stages:
 test:
   stage: test
   script:
-    - npm ci
+    - npm install
     - npx playwright install --with-deps
     - npx playwright test
   artifacts:
@@ -16,4 +16,3 @@ test:
       - playwright-report/
     reports:
       junit: test-results/junit.xml
-    expire_in: 1 week
